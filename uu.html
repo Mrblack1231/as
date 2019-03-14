@@ -3,7 +3,43 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
+		<style type="text/css">
+			.divo{
+				width:100px;
+				height:100px;
+				background:black;
+			}
+		</style>
 	</head>
 	<body>
+		<button class="btnk">变宽</button>
+		<button class="btng">变高</button>
+		<button class="btns">变色</button>
+		<button class="btny">隐藏</button>
+		<button class="btnc">重置</button>
+		<p><div class="divo"></div></p>
 	</body>
+	<script type="text/javascript">
+		var btn = document.getElementsByTagName("button")
+		var div = document.getElementsByTagName("div")[0]
+		for(let i=0; i<btn.length; i++){
+			btn[i].onclick=function(){
+				if(i==0){
+					div.style.width="200px"
+				}else if(i==1){
+					div.style.height="200px"
+				}else if(i==2){
+					div.style.background="tan"
+				}else if(i==3){
+					div.style.display="none"
+				}else if(i==4){
+					div.style.width="100px"
+					div.style.height="100px"
+					div.style.background="black"
+					div.style.display=""
+				}
+			}
+		}
+		
+	</script>
 </html>
