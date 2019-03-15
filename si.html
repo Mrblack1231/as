@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				width:100px;
+				height:100px;
+				background: black;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<button>点击将DIV变成红色</button>
+		<div></div>
+		<div></div>
+		<div></div>
+	</body>
+	<script type="text/javascript">
+		var btn = document.getElementsByTagName("button")[0]
+		var sdiv = document.getElementsByTagName("div")
+		btn.onclick=function(){
+			for(let i=0;i<sdiv.length;i++){
+				sdiv[i].style.background="red"
+			}
+		}
+	</script>
+</html>

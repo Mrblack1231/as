@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{margin: 0;padding: 0;}
+			div{
+				width:100%;
+				height:1000px;
+				background: teal;
+			}
+			p{
+				width: 20px;
+				height:20px;
+				border: 1px solid black;
+				margin-top: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="sdiv">
+			<p style="background: red;"></p>
+			<p style="background: teal;"></p>
+			<p style="background: tan;"></p>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var sp = document.getElementsByTagName("p")
+		var sdiv = document.getElementById("sdiv")
+		
+		for(let i=0; i<sp.length;i++){
+			sp[i].onclick=function(){
+				if(i==0){
+					sdiv.style.background="red"
+				}else if(i==1){
+					sdiv.style.background="teal"
+				}else if(i==2){
+					sdiv.style.background="tan"
+				}
+			}
+		}
+	</script>
+</html>

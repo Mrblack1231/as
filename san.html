@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<input type="text" value="北京市">
+		<input type="text" value="朝阳区">
+		<button>传参</button>
+	</body>
+	<script type="text/javascript">
+		var ipt = document.getElementsByTagName("input")
+		var btn = document.getElementsByTagName("button")[0]
+		
+		btn.onclick=function(){
+			for (let i=0;i<ipt.length;i++) {
+				alert(ipt[i].value)
+			}
+		}
+	</script>
+</html>
